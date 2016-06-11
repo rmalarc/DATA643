@@ -22,4 +22,5 @@ server.pid
 *.eml
 *.iws
 *.ipr
+*.pdf
 activator-*.sbt
