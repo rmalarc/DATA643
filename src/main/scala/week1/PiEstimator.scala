@@ -20,7 +20,7 @@ object PiEstimator {
   def run(numSamples:Int) ={
     val conf = new SparkConf()
       .setAppName("week1-EstimatePi")
-      .setMaster("local[2]") // Launch 3 local cores
+      .setMaster("local[2]")  // Launch 3 local cores
     val sc = new SparkContext(conf)
 
     val count = sc.parallelize(1 to numSamples).map{i =>
